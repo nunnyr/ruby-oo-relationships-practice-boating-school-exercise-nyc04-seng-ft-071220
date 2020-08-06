@@ -36,18 +36,22 @@ class Student
 
 end
 
-binding.pry
-0
+#binding.pry
+# 0
 
 
 # binding.pry
 # katherine = Student.new
 
-# spongebob = Student.new("Spongebob")
-# patrick= Student.new("Patrick")
+spongebob = Student.new("Spongebob")
+patrick= Student.new("Patrick")
+
+
  
-# puff= Instructor.new("Ms.Puff")
-# krabs= Instructor.new("Mr.Krabs")
+ puff= Instructor.new("Ms.Puff")
+krabs= Instructor.new("Mr.Krabs")
+
+binding.pry
  
 # no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
 # power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
