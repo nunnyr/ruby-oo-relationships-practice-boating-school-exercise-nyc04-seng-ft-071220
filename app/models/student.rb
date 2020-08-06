@@ -1,8 +1,5 @@
 require 'pry'
 
-
-
-
 class Student
 
 
@@ -13,16 +10,18 @@ class Student
     def initialize(name_param)
         @name = name_param
         @@all << self
-        binding.pry
-
+       
     end
 
     def self.all
         @@all
     end
 
-
 end
+
+
+# binding.pry
+# katherine = Student.new
 
 # spongebob = Student.new("Spongebob")
 # patrick= Student.new("Patrick")
