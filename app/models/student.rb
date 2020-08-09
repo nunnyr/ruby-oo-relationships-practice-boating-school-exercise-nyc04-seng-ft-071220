@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
 class Student
 
@@ -21,13 +21,28 @@ class Student
         # we are creating a new boating test with 
         # Student, test_name, test_status, instructor_object  
         new_test = BoatingTest.new(self, "test", "pass", instructor)
-        binding.pry 
+        # binding.pry 
     end
 
     def all_instructors
         #these are all instructors the students take the test with
         #this should be an array
+        #We need to iterate through data. What has the most complete data? @@BoatingTest
+        #`Student#all_instructors` should return an array of instructors with whom 
+        #this specific student took a boating test.
+        # binding.pry
+        BoatingTest.all. { |boating_test_info|
+            true == true
+            binding.pry
+            0
+
+        } 
+
+        binding.pry
+
     end
+
+
 
     def self.find_student
         #we will use a find enumerable

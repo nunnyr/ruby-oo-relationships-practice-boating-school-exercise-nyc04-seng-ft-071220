@@ -38,7 +38,7 @@ class Instructor
 
 end
 
-krabs = Instructor.new("Mr.Krabs")
+# krabs = Instructor.new("Mr.Krabs")
 
 # binding.pry
 # 0

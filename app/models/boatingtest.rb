@@ -20,7 +20,7 @@ class BoatingTest
 
 end
 
-kat_test = BoatingTest.new("kat", "hello", "pass", "and")
+#kat_test = BoatingTest.new("kat", "hello", "pass", "and")
 
 # binding.pry
 # 0
