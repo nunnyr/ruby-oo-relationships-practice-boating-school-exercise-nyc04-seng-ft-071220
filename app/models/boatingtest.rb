@@ -6,11 +6,12 @@ class BoatingTest
 
     @@all = [] #that is were we are storing all of the instances
 
-    def initialize(student, boating_test_name, boating_test_status, instructor)
-        @student
-        @boating_test_name
-        @boating_test_status
-        @instructor
+    def initialize(student_param, boating_test_name_param, boating_test_status_param, instructor_param)
+        @student = student_param
+        @boating_test_name = boating_test_name_param
+        @boating_test_status = boating_test_name_param
+        @instructor = instructor_param
+        @@all << self
     end
 
     def self.all
@@ -19,3 +20,7 @@ class BoatingTest
 
 end
 
+kat_test = BoatingTest.new("kat", "hello", "pass", "and")
+
+# binding.pry
+# 0

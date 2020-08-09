@@ -2,13 +2,13 @@ require 'pry'
 
 class Student
 
-    attr_accessor :name
+    attr_accessor :first_name
     #attribute that reads && writes the variable
 
     @@all = []    #this is a CLASS variable where we store our instances
 
-    def initialize(first_name)
-        @name = first_name
+    def initialize(first_name_param)
+        @first_name = first_name_param
         @@all << self
     end
 
@@ -17,11 +17,11 @@ class Student
         #binding.pry
     end
 
-    def add_boating_test
+    def add_boating_test(test_name, test_status, instructor)
         # we are creating a new boating test with 
         # Student, test_name, test_status, instructor_object  
-        
-        # binding.pry 
+        new_test = BoatingTest.new(self, "test", "pass", instructor)
+        binding.pry 
     end
 
     def all_instructors
@@ -51,14 +51,14 @@ Student.all
 spongebob = Student.new("Spongebob")
 patrick= Student.new("Patrick")
 
+puff = Instructor.new("Ms.Puff")
 
- 
- puff= Instructor.new("Ms.Puff")
-krabs= Instructor.new("Mr.Krabs")
 
-binding.pry
+
+# binding.pry
+# 0
  
-# no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
+no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
 # power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
 # power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
 

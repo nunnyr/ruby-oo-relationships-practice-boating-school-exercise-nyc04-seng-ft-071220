@@ -14,7 +14,6 @@ class Instructor
 
     def self.all
         @@all
-
     end
 
 
@@ -39,5 +38,7 @@ class Instructor
 
 end
 
-binding.pry
-0
+krabs = Instructor.new("Mr.Krabs")
+
+# binding.pry
+# 0
