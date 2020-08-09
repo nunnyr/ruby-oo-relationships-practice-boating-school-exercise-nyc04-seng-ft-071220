@@ -3,21 +3,25 @@ require 'pry'
 class Student
 
     attr_accessor :name
+    #attribute that reads && writes the variable
 
-    @@all = []
+    @@all = []    #this is a CLASS variable where we store our instances
 
     def initialize(first_name)
         @name = first_name
         @@all << self
     end
 
-    def self.all
+    def self.all     #this is a CLASS Method, it is usually calld on 'self'
         @@all
+        #binding.pry
     end
 
     def add_boating_test
         # we are creating a new boating test with 
-        # Student, test_name, test_status, instructor_object   
+        # Student, test_name, test_status, instructor_object  
+        
+        # binding.pry 
     end
 
     def all_instructors
@@ -36,12 +40,13 @@ class Student
 
 end
 
-#binding.pry
-# 0
 
 
 # binding.pry
-# katherine = Student.new
+katherine = Student.new("Katherine")
+# ^^^ is an instance of a student
+#katherine.all 
+Student.all
 
 spongebob = Student.new("Spongebob")
 patrick= Student.new("Patrick")
