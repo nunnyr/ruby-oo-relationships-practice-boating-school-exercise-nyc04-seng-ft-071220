@@ -42,23 +42,3 @@ end
 
 
 
-# binding.pry
-katherine = Student.new("Katherine")
-# ^^^ is an instance of a student
-#katherine.all 
-Student.all
-
-spongebob = Student.new("Spongebob")
-patrick= Student.new("Patrick")
-
-puff = Instructor.new("Ms.Puff")
-
-
-
-# binding.pry
-# 0
- 
-no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
-# power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
-# power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
-
